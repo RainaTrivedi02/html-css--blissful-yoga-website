@@ -19,28 +19,21 @@
   }
 
   .logo {
-    font-size: 22px;
-    font-weight: 600;
-    color: #121312;
-  }
-
-  .navbar {
-    width: 1440px;
-    padding: 15px 40px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgb(0, 0, 0);
-    position: fixed;
-    top: 0px;
-    left: 0px
   }
 
-  .logo {
+  .logo img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .logo span {
     font-size: 22px;
     font-weight: 600;
-    color: #121312;
+    font-family: 'Poppins', sans-serif;
   }
 
   .nav-links {
@@ -123,13 +116,12 @@
   .user-info {
     display: flex;
     align-items: center;
-    border-color: 1px solid rgb(19, 17, 17);
   }
 
   .user-name {
     background-color: white;
     color: rgb(104, 101, 101);
-    padding: 5px 320px 5px 10px;
+    padding: 5px 190px 5px 10px;
     margin: 25px 10px 10px 10px;
   }
 
@@ -141,7 +133,7 @@
   .user-message {
     background-color: white;
     color: rgb(104, 101, 101);
-    padding: 5px 300px 100px 10px;
+    padding: 5px 190px 100px 10px;
     margin: 10px 10px 20px 10px;
   }
 
@@ -152,6 +144,13 @@
     margin: 10px;
     border-radius: 20px;
     border: 1px solid #3366b2;
+  }
+
+  .send-button:hover {
+    transition: 0.3s;
+    background: rgb(53, 53, 222);
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
   }
 
   .contact-section {
@@ -209,7 +208,6 @@
     gap: 40px;
     width: 1200px;
     margin-left: 250px;
-
   }
 
   .footer-box {
@@ -224,7 +222,6 @@
 
   .footer-box p {
     font-size: 15px;
-
   }
 
   .footer-box ul {
@@ -245,15 +242,21 @@
     padding-left: 5px;
   }
 
-  .social-links a {
-    font-size: 22px;
-    margin-right: 10px;
-    color: #FFD78A;
+  .social-links img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    margin-top: 30px;
+    border-radius: 5px;
     transition: 0.3s;
+    align-items: center;
   }
 
-  .social-links a:hover {
-    color: white;
+  .social-links img:hover {
+    transform: scale(1.2);
+    background: #ffd78a;
+    padding: 5px;
+    border-radius: 4px;
   }
 
   .newsletter {
@@ -309,7 +312,11 @@
 </body>
 <div>
   <nav class="navbar">
-    <div class="logo">Blissful Yoga Hub</div>
+    <div class="logo">
+      <img src="../images/main-logo1.jpg" alt="yoga-logo">
+      <span>Blissful Yoga Hub</span>
+    </div>
+
 
     <div class="nav-links">
       <a href="../index.html">Home</a>
@@ -357,14 +364,12 @@
   <div class="item2">
     <span class="heading2">Contact</span>
     <div class="user-info">
-      <span class="user-name">Name</span>
+      <input type="text" placeholder="Name" class="user-name">
     </div>
     <div class="user-info2">
-      <span class="user-message">Message</span>
+      <input type="text" placeholder="Message" class="user-message">
     </div>
-    <div class="">
-      <input type="submit" value="send" class="send-button"/>
-    </div>
+    <span class="send-button">Send</span>
   </div>
 </div>
 
@@ -396,11 +401,22 @@
     </div>
   </div>
 
+
   <div align="center">
-    <div class="social-icons">
-      <img src="../images/insta.jpg" alt="insta-img" />
-      <img src="../images/facebook.jpg" alt="facebook-img" />
-      <img src="../images/telegram.jpg" alt="telegram-img" />
+    <div class="social-links">
+
+      <a href="https://www.instagram.com/blissfulyogahub" target="_blank">
+        <img src="../images/insta.jpeg" alt="Instagram" height="30px" width="30px">
+      </a>
+
+      <a href="https://www.facebook.com/blissfulyogahub" target="_blank">
+        <img src="../images/facebook.png" alt="Facebook" height="30px" width="30px">
+      </a>
+
+
+      <a href="https://t.me/blissfulyogahub" target="_blank">
+        <img src="../images/telegram.png" alt="Telegram" height="30px" width="30px">
+      </a>
     </div>
   </div>
 
