@@ -8,7 +8,7 @@
     box-shadow: 0 2px 8px rgb(2, 2, 2);
     position: fixed;
     top: 0px;
-    left: 0px
+    left: 0px;
 }
 
 .logo {
@@ -23,7 +23,7 @@
     border-radius: 50%;
 }
 
-.logo {
+.logo span {
     font-size: 22px;
     font-weight: 600;
     color: #121312;
@@ -51,6 +51,7 @@ body {
 .container {
     flex-direction: row;
     display: center;
+   
 }
 
 .item {
