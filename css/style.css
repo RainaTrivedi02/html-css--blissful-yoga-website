@@ -23,6 +23,11 @@
             border-radius: 50%;
 
         }
+        .logo span {
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
 
         .nav-links {
             margin: 0;
